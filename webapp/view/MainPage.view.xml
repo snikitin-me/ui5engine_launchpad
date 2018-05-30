@@ -1,0 +1,29 @@
+<mvc:View
+	controllerName="controller.MainPage"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	>
+	<Page showHeader="false">
+		<content>
+		<TileContainer
+			id="container"
+			tileDelete="handleTileDelete"
+			tiles="{/d/results}">
+			<StandardTile
+				icon="{icon}"
+				type="{type}"
+				number="{number}"
+				numberUnit="{numberUnit}"
+				title="{title}"
+				info="{info}"
+				infoState="{infoState}"
+				app:url="{url}"
+				press="onPress"
+				/>
+		</TileContainer>
+	    </content>
+	</Page>
+</mvc:View>
